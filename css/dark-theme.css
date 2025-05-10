@@ -1,0 +1,272 @@
+/* Dark Theme Variables */
+:root.dark-theme {
+    --ignis-color: #ff4d00;
+    --aqua-color: #0077b6;
+    --aura-color: #90e0ef;
+    --terra-color: #6b4f2d;
+    --aether-color: #7b2cbf;
+    --gold: #d4af37;
+    --dark-bg: #121212;
+    --dark-bg-2: #1e1e1e;
+    --light-text: #f5f5f5;
+    --medium-text: #bbbbbb;
+    --card-bg: #1e1e1e;
+    --card-border: rgba(212, 175, 55, 0.2);
+}
+
+/* Dark Theme Styles */
+.dark-theme body {
+    background-color: var(--dark-bg);
+    color: var(--light-text);
+}
+
+.dark-theme h1, 
+.dark-theme h2, 
+.dark-theme h3, 
+.dark-theme h4, 
+.dark-theme h5 {
+    color: var(--light-text);
+}
+
+/* Header - Dark Theme */
+.dark-theme header {
+    background-color: rgba(18, 18, 18, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.dark-theme .logo {
+    color: var(--light-text);
+}
+
+.dark-theme nav ul li a {
+    color: var(--light-text);
+}
+
+.dark-theme nav ul li a:hover {
+    color: var(--gold);
+}
+
+.dark-theme .cart-button {
+    color: var(--gold);
+    border-color: var(--gold);
+}
+
+.dark-theme .cart-button:hover {
+    background-color: var(--gold);
+    color: var(--dark-bg);
+}
+
+/* Hero Section - Dark Theme */
+.dark-theme .hero {
+    background-color: var(--dark-bg);
+}
+
+.dark-theme .hero h1 {
+    color: var(--light-text);
+}
+
+.dark-theme .hero p {
+    color: var(--medium-text);
+}
+
+/* About Section - Dark Theme */
+.dark-theme .about {
+    background-color: var(--dark-bg-2);
+}
+
+.dark-theme .section-title {
+    color: var(--light-text);
+}
+
+.dark-theme .about p {
+    color: var(--medium-text);
+}
+
+/* Elements Section - Dark Theme */
+.dark-theme .elements {
+    background-color: var(--dark-bg);
+}
+
+.dark-theme .text-center {
+    color: var(--medium-text);
+}
+
+.dark-theme .element-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dark-theme .element-card:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(212, 175, 55, 0.4);
+}
+
+.dark-theme .element-name {
+    color: var(--light-text);
+}
+
+.dark-theme .element-desc {
+    color: var(--medium-text);
+}
+
+.dark-theme .note {
+    background-color: rgba(212, 175, 55, 0.15);
+    color: var(--medium-text);
+}
+
+/* Product Section - Dark Theme */
+.dark-theme .product {
+    background-color: var(--dark-bg-2);
+}
+
+.dark-theme .product-title {
+    color: var(--light-text);
+}
+
+.dark-theme .product-desc {
+    color: var(--medium-text);
+}
+
+.dark-theme .feature {
+    color: var(--medium-text);
+}
+
+.dark-theme .product-price {
+    color: var(--medium-text);
+}
+
+.dark-theme .tab-btn {
+    color: var(--medium-text);
+}
+
+.dark-theme .tab-btn.active {
+    color: var(--gold);
+}
+
+.dark-theme .element-product {
+    background-color: var(--dark-bg-2);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.dark-theme .element-product h4 {
+    color: var(--light-text);
+}
+
+.dark-theme .element-product p {
+    color: var(--medium-text);
+}
+
+/* FAQ Link Box Section (Index Page) - Dark Theme */
+.dark-theme .faq-link-section {
+    background-color: var(--dark-bg-2); /* Changed background */
+}
+
+/* Common dark theme styles for the contact/link box */
+.dark-theme .faq-contact-box {
+    background-color: rgba(212, 175, 55, 0.08);
+    border-color: rgba(212, 175, 55, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dark-theme .contact-content h3 {
+    color: var(--light-text);
+}
+
+.dark-theme .contact-content p {
+    color: var(--medium-text);
+}
+
+.dark-theme .contact-content p a {
+    color: var(--gold);
+}
+
+/* === Make sure the contact-hours style from faq.css is also here if needed globally === */
+.dark-theme .contact-hours {
+    color: var(--medium-text);
+}
+
+/* Cart Notification - Dark Theme */
+.dark-theme .cart-confirmation-content {
+    background-color: var(--dark-bg-2);
+    color: var(--light-text);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    background-color: transparent;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 20px;
+}
+
+.dark-theme .theme-toggle:hover {
+    background-color: var(--gold);
+    color: var(--dark-bg);
+}
+
+.dark-theme .theme-toggle i.fa-moon {
+    display: none;
+}
+
+.dark-theme .theme-toggle i.fa-sun {
+    display: block;
+}
+
+.theme-toggle i.fa-sun {
+    display: none;
+}
+
+.theme-toggle i.fa-moon {
+    display: block;
+}
+
+/* Enhanced Animation for Orbs in Dark Theme */
+.dark-theme .orb {
+    opacity: 0.4;
+    filter: blur(50px);
+}
+
+.dark-theme .ignis-orb {
+    background: radial-gradient(circle, var(--ignis-color) 10%, rgba(255, 77, 0, 0) 70%);
+}
+
+.dark-theme .aqua-orb {
+    background: radial-gradient(circle, var(--aqua-color) 10%, rgba(0, 119, 182, 0) 70%);
+}
+
+.dark-theme .aura-orb {
+    background: radial-gradient(circle, var(--aura-color) 10%, rgba(144, 224, 239, 0) 70%);
+}
+
+.dark-theme .terra-orb {
+    background: radial-gradient(circle, var(--terra-color) 10%, rgba(107, 79, 45, 0) 70%);
+}
+
+.dark-theme .aether-orb {
+    background: radial-gradient(circle, var(--aether-color) 10%, rgba(123, 44, 191, 0) 70%);
+}
+
+.dark-theme .white-placeholder {
+    background-color: var(--dark-bg-2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+/* Responsive - Dark Theme */
+@media screen and (max-width: 768px) {
+    .dark-theme nav ul {
+        background-color: var(--dark-bg);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+}

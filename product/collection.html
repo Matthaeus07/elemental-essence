@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komplette Kollektion - Elemental Essence</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Komplette Kollektion - Erleben Sie alle fünf Elemente der Elemental Essence Luxusparfum-Kollektion. 5 x 30ml Flakons mit 30% Duftstoffkonzentration.">
+    <meta name="keywords" content="Parfum Kollektion, Elemental Essence, Luxusparfum, Parfum Set, Luxus Geschenkset">
+    <meta name="author" content="Elemental Essence">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="product">
+    <meta property="og:url" content="https://www.elementalessence.at/product/collection">
+    <meta property="og:title" content="Komplette Kollektion - Die ultimative Elemental Essence Erfahrung">
+    <meta property="og:description" content="Die exklusive Komplettkollektion aller fünf elementaren Düfte: Ignis, Aqua, Aura, Terra und Aether in voller Größe. Das ultimative Geschenk für wahre Parfum-Liebhaber.">
+    <meta property="og:image" content="assets/collection.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.elementalessence.at/product/collection">
+    <meta property="twitter:title" content="Komplette Kollektion - Die ultimative Elemental Essence Erfahrung">
+    <meta property="twitter:description" content="Die exklusive Komplettkollektion aller fünf elementaren Düfte: Ignis, Aqua, Aura, Terra und Aether in voller Größe. Das ultimative Geschenk für wahre Parfum-Liebhaber.">
+    <meta property="twitter:image" content="assets/collection.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.elementalessence.at/product/collection">
+    
+    <!-- Preload critical CSS -->
+    <link rel="preload" href="../css/styles.css" as="style">
+    <link rel="preload" href="../css/dark-theme.css" as="style">
+    <link rel="preload" href="../css/product-page.css" as="style">
+    <link rel="preload" href="../css/stock-indicator.css" as="style">
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" as="font" crossorigin>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/dark-theme.css">
+    <link rel="stylesheet" href="../css/index-products.css">
+    <link rel="stylesheet" href="../css/stock-indicator.css">
+    <link rel="stylesheet" href="../css/product-page.css">
+    
+    <!-- Structured Data for Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "Komplette Kollektion",
+      "image": "../assets/collection.png",
+      "description": "Die exklusive Komplettkollektion aller fünf elementaren Düfte: Ignis, Aqua, Aura, Terra und Aether in voller Größe.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Elemental Essence"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.elementalessence.at/product/collection",
+        "priceCurrency": "EUR",
+        "price": "549.00",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    </script>
+
+    <!-- Collection-specific styles -->
+    <style>
+        .collection-orb {
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(255, 215, 0, 0.5) 0%, rgba(255, 215, 0, 0) 70%);
+            top: 50%;
+            left: 30%;
+            transform: translate(-50%, -50%);
+            animation: pulse 12s ease-in-out infinite;
+        }
+
+        .collection-theme {
+            position: relative;
+        }
+
+        .collection-theme::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(45deg, var(--ignis-color), var(--aqua-color), var(--aura-color), var(--terra-color), var(--aether-color));
+        }
+        
+        .related-products-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 20px;
+            justify-content: center;
+            max-width: 1300px;
+        }
+
+        .related-product {
+            border: 1px solid rgba(184, 134, 11, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            animation: fadeIn 0.8s ease-out forwards;
+            flex: 0 0 calc(20% - 30px); /* 5 cards per row for very large screens */
+            min-width: 225px;
+        }
+
+        .related-product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border-color: rgba(184, 134, 11, 0.3);
+        }
+
+        .related-product-image {
+            width: 100%;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+
+        .related-product-image img {
+            width: 100%;
+            max-width: 120px;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .related-product:hover .related-product-image img {
+            transform: scale(1.05);
+        }
+
+        /* Responsive adjustments */
+        @media screen and (max-width: 1299px) and (min-width: 900px) {
+            .related-product {
+                flex: 0 0 calc(33.33% - 30px);
+            }
+        }
+        @media screen and (max-width: 899px) and (min-width: 600px) {
+            .related-product {
+                flex: 0 0 calc(50% - 30px);
+            }
+        }
+        @media screen and (max-width: 599px) {
+            .related-product {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="../index.html" class="logo">
+                    <img src="../assets/logo.png" alt="Elemental Essence Logo" width="40" height="40" id="logoImage">
+                    <h4>ELEMENTAL<span>ESSENCE</span></h4>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html#about">Unsere Philosophie</a></li>
+                        <li><a href="../index.html#elements">Die Elemente</a></li>
+                        <li><a href="../index.html#product">Produkte</a></li>
+                        <li><a href="../index.html#footer">Kontakt</a></li>
+                        <li>
+                            <a href="../cart.html" class="cart-button">
+                                <i class="fas fa-shopping-cart"></i> <span class="cart-text">Warenkorb</span>
+                            </a>
+                        </li>
+                        <!-- Theme toggle will be added by JavaScript -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- Product Hero Section -->
+    <section class="product-hero collection-theme">
+        <div class="element-orb collection-orb"></div>
+        <div class="container">
+            <div class="product-hero-content">
+                <div class="product-image-container">
+                    <img src="../assets/collection.png" alt="Komplette Kollektion" class="product-hero-image">
+                </div>
+                <div class="product-info-container">
+                    <h1>Komplette Kollektion</h1>
+                    <p class="product-tagline">Die ultimative Elemental Essence Erfahrung mit allen fünf Elementen in voller Größe.</p>
+                    
+                    <div class="product-price">
+                        <span>549€</span> <del>645€</del>
+                    </div>
+                    <div class="stock-indicator" id="stockIndicator"></div>
+                    
+                    <div class="product-actions">
+                        <div class="quantity-selector">
+                            <button class="quantity-btn minus" id="decreaseQuantity">-</button>
+                            <input type="number" id="quantity" value="1" min="1" max="10">
+                            <button class="quantity-btn plus" id="increaseQuantity">+</button>
+                        </div>
+                        <button class="btn add-to-cart-btn" id="addToCartBtn" data-sku="COLL-SET">In den Warenkorb</button>
+                    </div>
+                    
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Inhalt:</span>
+                            <span class="meta-value">5 x 30ml</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Duftstoffkonzentration:</span>
+                            <span class="meta-value">30%</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Konzentration:</span>
+                            <span class="meta-value">Extrait de Parfum</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details Section -->
+    <section class="product-details">
+        <div class="container">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="description">Beschreibung</button>
+                <button class="tab-btn" data-tab="inhalt">Inhalt</button>
+            </div>
+            
+            <div class="tab-content active" id="description">
+                <div class="description-content">
+                    <div class="description-text">
+                        <h2>Die vollständige Kraft aller Elemente</h2>
+                        <p>Die <span class="gold-text">Komplette Kollektion</span> von Elemental Essence ist unsere Hommage an die Perfektion und Vielfalt der elementaren Kräfte. Diese exklusive Sammlung umfasst alle fünf Düfte unserer Signature-Kollektion in voller Größe: Ignis, Aqua, Aura, Terra und Aether.</p>
+                        
+                        <p>Mit einer außergewöhnlich hohen Duftstoffkonzentration von <span class="gold-text">30%</span> bietet jedes Parfum in dieser Kollektion eine unvergleichliche Tiefe und Langlebigkeit. Jeder 30ml Flakon ist ein Kunstwerk, das die Essenz eines Elements einfängt und zum Leben erweckt.</p>
+                        
+                        <p>Das ultimative Geschenk für anspruchsvolle Parfum-Enthusiasten oder die perfekte Investition in Ihre persönliche Duftgarderobe. Mit dieser Kollektion haben Sie für jede Stimmung und jeden Anlass den perfekten Duft zur Hand.</p>
+                        
+                        <div class="detail-cards">
+                            <div class="detail-card">
+                                <i class="fas fa-spray-can-sparkles"></i>
+                                <h4>Extrait de Parfum</h4>
+                                <p>30% Duftstoffkonzentration für außergewöhnliche Intensität</p>
+                            </div>
+                            <div class="detail-card">
+                                <i class="fas fa-clock"></i>
+                                <h4>Langanhaltend</h4>
+                                <p>Hält auf der Haut bis zu 12 Stunden</p>
+                            </div>
+                            <div class="detail-card">
+                                <i class="fas fa-gift"></i>
+                                <h4>Exklusives Geschenk</h4>
+                                <p>Die ultimative Wahl für besondere Anlässe</p>
+                            </div>
+                            <div class="detail-card">
+                                <i class="fas fa-percentage"></i>
+                                <h4>Preisvorteil</h4>
+                                <p>Sparen Sie beim Kauf der kompletten Kollektion</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="inhalt">
+                <div class="description-content">
+                    <p class="duftnoten-intro">Jedes Element in unserer Komplettkollektion verkörpert eine einzigartige Facette der Natur und bietet ein unvergleichliches olfaktorisches Erlebnis. Entdecken Sie die Essenz jedes Elements in voller Größe.</p>
+                    
+                    <!-- Ignis -->
+                    <div class="duftnoten-box">
+                        <div class="duftnoten-layer">
+                            <div class="layer-title">
+                                <h3>Ignis</h3>
+                            </div>
+                            <div class="notes-list">
+                                <div class="note-item">
+                                    <div class="note-name">Kopfnoten</div>
+                                    <div class="note-desc">Schwarzer Pfeffer, Safran, Kardamom</div>
+                                </div>
+                                <div class="note-item">
+                                    <div class="note-name">Herznoten</div>
+                                    <div class="note-desc">Zimt, Oud, Jasmin, Weihrauchöl</div>
+                                </div>
+                                <div class="note-item">
+                                    <div class="note-name">Basisnoten</div>
+                                    <div class="note-desc">Amber, Benzoe, Zedernholz, Vanille, Moschus</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Aqua -->
+                    <div class="duftnoten-box">
+                        <div class="duftnoten-layer">
+                            <div class="layer-title">
+                                <h3>Aqua</h3>
+                            </div>
+                            <div class="notes-list">
+                                <div class="note-item">
+                                    <div class="note-name">Kopfnoten</div>
+                                    <div class="note-desc">Meersalz, Zitrone, Bergamotte</div>
+                                </div>
+                                <div class="note-item">
+                                    <div class="note-name">Herznoten</div>
+                                    <div class="note-desc">Jasmin, Meeresakkord, Lotusblüte, Wasserlilie</div>
+                                </div>
+                                <div class="note-item">
+                                    <div class="note-name">Basisnoten</div>
+                                    <div class="note-desc">Sandelholz, Weißer Moschus, Ambergris, Zedernholz, Vanille</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Aura -->
+                    <div class="duftnoten-box">
+                        <div class="duftnoten-layer">
+                            <div class="layer-title">
+                                <h3>Aura</h3>
+                            </div>
+                            <div class="notes-list">
+                                <div class="note-item">
+                                    <div class="note-name">Kopfnoten</div>
+                                    <div class="note-desc">Ozon, Aldehyde, Bergamotte</div>
+                                </div>
+                                <div class="note-item">
+                                    <div class="note-name">Herznoten</div>
+                                    <div class="note-desc">Weißer Lavendel, Pflaume, Iris, Heliotrop</div>
+                                </div>
+                                <div class="note-item">
+                                    <div class="note-name">Basisnoten</div>
+                                    <div class="note-desc">Weißer Moschus, Ambroxan, Tonkabohne, Cashmeran, Iso E Super</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Terra -->
+                    <div class="duftnoten-box">
+                        <div class="duftnoten-layer">
+                            <div class="layer-title">
+                                <h3>Terra</h3>
+                            </div>
+                            <div class="notes-list">
+                                <div class="note-item">
+                                    <div class="note-name">Kopfnoten</div>
+                                    <div class="note-desc">Schwarzer Pfeffer, Eichenmoos, Grüne Blätter</div>
+                                </div>
+                                <div class="note-item">
+                                    <div class="note-name">Herznoten</div>
+                                    <div class="note-desc">Patchouli, Vetiver, Trüffel, Zypresse</div>
+                                </div>
+                                <div class="note-item">
+                                    <div class="note-name">Basisnoten</div>
+                                    <div class="note-desc">Labdanum, Oud, Zedernholz, Moschus, Torf</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Aether -->
+                    <div class="duftnoten-box">
+                        <div class="duftnoten-layer">
+                            <div class="layer-title">
+                                <h3>Aether</h3>
+                            </div>
+                            <div class="notes-list">
+                                <div class="note-item">
+                                    <div class="note-name">Kopfnoten</div>
+                                    <div class="note-desc">Sternanis, Weißer Salbei, Violette Blätter</div>
+                                </div>
+                                <div class="note-item">
+                                    <div class="note-name">Herznoten</div>
+                                    <div class="note-desc">Weihrauch, Myrrhe, Iris, Jasmin Sambac</div>
+                                </div>
+                                <div class="note-item">
+                                    <div class="note-name">Basisnoten</div>
+                                    <div class="note-desc">Vanille, Sandelholz, Ambergris, Moschus, Patchouli</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Individual Products Section -->
+    <section class="related-products">
+        <div class="container">
+            <h2 class="section-title">Erkunden Sie jedes Element einzeln</h2>
+            
+            <div class="related-products-grid">
+                <!-- Ignis -->
+                <div class="related-product ignis">
+                    <div class="related-product-image">
+                        <img src="../assets/ignis.png" alt="Ignis Parfum">
+                    </div>
+                    <h4>Ignis</h4>
+                    <p>Das feurige Element, würzig und intensiv.</p>
+                    <a href="ignis.html" class="btn btn-small">Mehr erfahren</a>
+                </div>
+                
+                <!-- Aqua -->
+                <div class="related-product aqua">
+                    <div class="related-product-image">
+                        <img src="../assets/aqua.png" alt="Aqua Parfum">
+                    </div>
+                    <h4>Aqua</h4>
+                    <p>Das fließende Element, frisch und tiefgründig.</p>
+                    <a href="aqua.html" class="btn btn-small">Mehr erfahren</a>
+                </div>
+                
+                <!-- Aura -->
+                <div class="related-product aura">
+                    <div class="related-product-image">
+                        <img src="../assets/aura.png" alt="Aura Parfum">
+                    </div>
+                    <h4>Aura</h4>
+                    <p>Das luftige Element, leicht und belebend.</p>
+                    <a href="aura.html" class="btn btn-small">Mehr erfahren</a>
+                </div>
+                
+                <!-- Terra -->
+                <div class="related-product terra">
+                    <div class="related-product-image">
+                        <img src="../assets/terra.png" alt="Terra Parfum">
+                    </div>
+                    <h4>Terra</h4>
+                    <p>Das erdige Element, reichhaltig und verwurzelt.</p>
+                    <a href="terra.html" class="btn btn-small">Mehr erfahren</a>
+                </div>
+                
+                <!-- Aether -->
+                <div class="related-product aether">
+                    <div class="related-product-image">
+                        <img src="../assets/aether.png" alt="Aether Parfum">
+                    </div>
+                    <h4>Aether</h4>
+                    <p>Das mystische Element, spirituell und transzendent.</p>
+                    <a href="aether.html" class="btn btn-small">Mehr erfahren</a>
+                </div>
+            </div>
+            
+            <div class="discovery-promo">
+                <div class="discovery-promo-content">
+                    <div class="discovery-promo-image">
+                        <img src="../assets/discovery-set.png" alt="Elemental Essence Discovery Kit">
+                    </div>
+                    <div class="discovery-promo-info">
+                        <h3>Alle Elemente entdecken</h3>
+                        <p>Erleben Sie alle fünf Elemente in unserem exklusiven Discovery Kit und erhalten Sie einen 40€ Gutschein. Die perfekte Einführung in die Welt von Elemental Essence.</p>
+                        <a href="discovery.html" class="btn">Zum Discovery Kit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        ELEMENTAL <span>ESSENCE</span>
+                    </div>
+                    <p class="footer-desc">Eine exklusive Kollektion von Luxusparfums, inspiriert von den Elementen, die unser Universum formen.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html#about">Über uns</a></li>
+                        <li><a href="../index.html#elements">Kollektionen</a></li>
+                        <li><a href="../index.html#product">Shop</a></li>
+                        <li><a href="../faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Rechtliches</h4>
+                    <ul class="footer-links">
+                        <li><a href="../agb.html">AGB</a></li>
+                        <li><a href="../datenschutz.html">Datenschutz</a></li>
+                        <li><a href="#">Impressum</a></li>
+                        <li><a href="../widerrufsrecht.html">Widerrufsrecht</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Kontakt</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:info@elementalessence.at">info@elementalessence.at</a></li>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2025 Elemental Essence. Alle Rechte vorbehalten.
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript files -->
+    <script src="../js/theme.js"></script>
+    <script src="../js/product-page.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/cart.js"></script>
+
+</body>
+</html>

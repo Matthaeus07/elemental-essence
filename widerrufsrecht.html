@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemental Essence - Widerrufsrecht</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Widerrufsbelehrung und -formular für Elemental Essence - Informationen zu Ihrem Recht auf Widerruf und Rückgabe.">
+    <meta name="keywords" content="Elemental Essence, Widerrufsrecht, Widerrufsformular, Rückgabe, Luxusparfum, Rücknahme, Bestellwiderruf">
+    <meta name="author" content="Elemental Essence">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.elementalessence.at/widerrufsrecht">
+    <meta property="og:title" content="Widerrufsrecht - Elemental Essence - Luxusparfums inspiriert von den fünf Elementen">
+    <meta property="og:description" content="Erfahren Sie mehr über Ihr Widerrufsrecht und die Bedingungen für Rückgaben bei Elemental Essence.">
+    <meta property="og:image" content="assets/logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.elementalessence.at/widerrufsrecht">
+    <meta property="twitter:title" content="Widerrufsrecht - Elemental Essence - Luxusparfums inspiriert von den fünf Elementen">
+    <meta property="twitter:description" content="Erfahren Sie mehr über Ihr Widerrufsrecht und die Bedingungen für Rückgaben bei Elemental Essence.">
+    <meta property="twitter:image" content="assets/logo.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.elementalessence.at/widerrufsrecht">
+    
+    <!-- Preload critical CSS -->
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="preload" href="css/dark-theme.css" as="style">
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" as="font" crossorigin>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dark-theme.css">
+    
+    <style>
+        /* Specific styles for Widerrufsrecht page */
+        .widerrufsrecht-hero {
+            height: 45vh;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            background-color: var(--light-bg);
+            padding-top: 80px;
+        }
+
+        .dark-theme .widerrufsrecht-hero {
+            background-color: var(--dark-bg);
+        }
+
+        .widerrufsrecht-hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .widerrufsrecht-hero h1 {
+            font-size: 48px;
+            font-weight: 350;
+            letter-spacing: 5px;
+            margin-bottom: 20px;
+            color: var(--dark-text);
+        }
+
+        .dark-theme .widerrufsrecht-hero h1 {
+            color: var(--light-text);
+        }
+
+        .widerrufsrecht-hero h1 span {
+            color: var(--gold);
+        }
+
+        .widerrufsrecht-hero p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            color: var(--medium-text);
+        }
+
+        .widerrufsrecht-section {
+            padding: 80px 0 120px;
+            background-color: var(--light-bg-2);
+            position: relative;
+        }
+
+        .dark-theme .widerrufsrecht-section {
+            background-color: var(--dark-bg-2);
+        }
+
+        .widerrufsrecht-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .widerrufsrecht-container h2 {
+            color: var(--gold);
+            margin-bottom: 25px;
+            font-size: 30px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .widerrufsrecht-container h2::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 1px;
+            background-color: var(--gold);
+            bottom: 0;
+            left: 0;
+        }
+
+        .widerrufsrecht-container h3 {
+            color: var(--gold);
+            margin: 50px 0 15px;
+            font-size: 25px;
+        }
+
+        .widerrufsrecht-container p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+            color: var(--medium-text);
+        }
+
+        .widerrufsrecht-container a {
+            color: var(--gold);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .widerrufsrecht-container a:hover {
+            text-decoration: underline;
+        }
+
+        .muster-formular {
+            margin-top: 40px;
+            padding: 30px;
+            background-color: rgba(184, 134, 11, 0.05);
+            border-radius: 8px;
+            border: 1px dashed rgba(184, 134, 11, 0.3);
+        }
+
+        .dark-theme .muster-formular {
+            background-color: rgba(212, 175, 55, 0.08);
+            border-color: rgba(212, 175, 55, 0.2);
+        }
+
+        .muster-formular h3 {
+            margin-top: 0;
+        }
+
+        .contact-box {
+            margin-top: 50px;
+            background-color: rgba(184, 134, 11, 0.05);
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .dark-theme .contact-box {
+            background-color: rgba(212, 175, 55, 0.08);
+            border-color: rgba(212, 175, 55, 0.2);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-box h3 {
+            margin-top: 0;
+            color: var(--dark-text);
+            font-size: 20px;
+            margin-bottom: 15px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .dark-theme .contact-box h3 {
+            color: var(--light-text);
+        }
+
+        .contact-box p {
+            margin-bottom: 0;
+        }
+
+        /* Styles für Kommunikationsrichtlinien */
+        .communication-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 20px 0;
+        }
+
+        .communication-list li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 10px;
+            line-height: 1.6;
+            color: var(--medium-text);
+        }
+
+        .communication-list li:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 6px;
+            height: 6px;
+            background-color: var(--gold);
+            border-radius: 50%;
+        }
+
+        .dark-theme .communication-list li:before {
+            background-color: var(--gold);
+        }
+
+        /* Responsive styles */
+        @media screen and (max-width: 768px) {
+            .widerrufsrecht-hero h1 {
+                font-size: 36px;
+            }
+            
+            .widerrufsrecht-hero p {
+                font-size: 16px;
+            }
+            
+            .widerrufsrecht-content {
+                padding: 30px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .widerrufsrecht-hero {
+                height: 60vh;
+                padding-top: 90px;
+                min-height: 350px;
+            }
+
+            .widerrufsrecht-hero h1 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .widerrufsrecht-container {
+                padding: 0;
+            }
+            
+            .muster-formular {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.png" alt="Elemental Essence Logo" width="40" height="40" id="logoImage">
+                    <h4>ELEMENTAL<span>ESSENCE</span></h4>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html#about">Unsere Philosophie</a></li>
+                        <li><a href="index.html#elements">Die Elemente</a></li>
+                        <li><a href="index.html#product">Produkte</a></li>
+                        <li><a href="index.html#footer">Kontakt</a></li>
+                        <li>
+                            <a href="cart.html" class="cart-button">
+                                <i class="fas fa-shopping-cart"></i> <span class="cart-text">Warenkorb</span>
+                            </a>
+                        </li>
+                        <!-- Theme toggle will be added by JavaScript -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Orbs Background -->
+    <section class="widerrufsrecht-hero">
+        <div class="element-orbs">
+            <div class="orb ignis-orb"></div>
+            <div class="orb aqua-orb"></div>
+            <div class="orb aura-orb"></div>
+            <div class="orb terra-orb"></div>
+            <div class="orb aether-orb"></div>
+        </div>
+        <div class="container">
+            <div class="widerrufsrecht-hero-content">
+                <h1>WIDERRUFS<span>RECHT</span></h1>
+                <p>Informationen zu Ihrem gesetzlichen Widerrufsrecht als Verbraucher sowie unser Muster-Widerrufsformular.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Widerrufsrecht Content Section -->
+    <section class="widerrufsrecht-section">
+        <div class="container">
+            <div class="widerrufsrecht-container">
+                <h2>Widerrufsbelehrung & Widerrufsformular</h2>
+                
+                <p>Verbrauchern steht ein Widerrufsrecht nach folgender Maßgabe zu, wobei Verbraucher jede natürliche Person ist, die ein Rechtsgeschäft zu Zwecken abschließt, die überwiegend weder ihrer gewerblichen noch ihrer selbständigen beruflichen Tätigkeit zugerechnet werden können:</p>
+                
+                <h3>1. Widerrufsbelehrung</h3>
+                
+                <p><strong>Widerrufsrecht</strong></p>
+                
+                <p>Sie haben das Recht, binnen 14 Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen.</p>
+                
+                <p>Die Widerrufsfrist beträgt 14 Tage ab dem Tag der vollendeten Bestellung.</p>
+                
+                <p>Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (Elemental Essence) mittels einer eindeutigen Erklärung über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren. Senden Sie Ihre Widerrufserklärung bitte an: info@elementalessence.at</p>
+                
+                <p>Zur Wahrung der Widerrufsfrist reicht es aus, dass Sie die Mitteilung über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist absenden.</p>
+                
+                <p><strong>Folgen des Widerrufs</strong></p>
+                
+                <p>Wenn Sie diesen Vertrag widerrufen, haben wir Ihnen alle Zahlungen, die wir von Ihnen erhalten haben, einschließlich der Lieferkosten (mit Ausnahme der zusätzlichen Kosten, die sich daraus ergeben, dass Sie eine andere Art der Lieferung als die von uns angebotene, günstigste Standardlieferung gewählt haben), unverzüglich und spätestens binnen vierzehn Tagen ab dem Tag zurückzuzahlen, an dem die Mitteilung über Ihren Widerruf dieses Vertrags bei uns eingegangen ist. Für diese Rückzahlung verwenden wir dasselbe Zahlungsmittel, das Sie bei der ursprünglichen Transaktion eingesetzt haben, es sei denn, mit Ihnen wurde ausdrücklich etwas anderes vereinbart; in keinem Fall werden Ihnen wegen dieser Rückzahlung Entgelte berechnet. Wir können die Rückzahlung verweigern, bis wir die Waren wieder zurückerhalten haben oder bis Sie den Nachweis erbracht haben, dass Sie die Waren zurückgesandt haben, je nachdem, welches der frühere Zeitpunkt ist.</p>
+                
+                <p>Sie haben die Waren unverzüglich und in jedem Fall spätestens binnen vierzehn Tagen ab dem Tag, an dem Sie uns über den Widerruf dieses Vertrags unterrichten, zurückzusenden. Die Frist ist gewahrt, wenn Sie die Waren vor Ablauf der Frist von vierzehn Tagen absenden.</p>
+
+                <p>Nach Eingang Ihres Widerrufs per E-Mail werden wir Ihnen die genauen Rücksendeinformationen mitteilen. Bitte warten Sie auf unsere Anweisungen, bevor Sie eine Rücksendung veranlassen.</p>
+                
+                <p>Sie tragen die unmittelbaren Kosten der Rücksendung der Waren.</p>
+                
+                <p>Sie müssen für einen etwaigen Wertverlust der Waren nur aufkommen, wenn dieser Wertverlust auf einen zur Prüfung der Beschaffenheit, Eigenschaften und Funktionsweise der Waren nicht notwendigen Umgang mit ihnen zurückzuführen ist.</p>
+                
+                <h3>2. Ausschluss bzw. vorzeitiges Erlöschen des Widerrufsrechts</h3>
+                
+                <p>Das Widerrufsrecht besteht nicht bei Verträgen zur Lieferung von Waren, die nicht vorgefertigt sind und für deren Herstellung eine individuelle Auswahl oder Bestimmung durch den Verbraucher maßgeblich ist oder die eindeutig auf die persönlichen Bedürfnisse des Verbrauchers zugeschnitten sind.</p>
+                
+                <p>Das Widerrufsrecht erlischt vorzeitig bei Verträgen zur Lieferung versiegelter Waren, die aus Gründen des Gesundheitsschutzes oder der Hygiene nicht zur Rückgabe geeignet sind, wenn ihre Versiegelung nach der Lieferung entfernt wurde. Daraus ergibt sich, dass ausschließlich original verpackte Ware retour genommen werden kann.</p>
+                
+                <p>Das Widerrufsrecht gilt nicht für Verbraucher, die zum Zeitpunkt des Vertragsschlusses keinem Mitgliedstaat der Europäischen Union angehören und deren alleiniger Wohnsitz und Lieferadresse zum Zeitpunkt des Vertragsschlusses außerhalb der Europäischen Union liegen.</p>
+                
+                <h3>3. Allgemeine Hinweise</h3>
+                
+                <p>1) Bitte vermeiden Sie Beschädigungen und Verunreinigungen der Ware. Senden Sie die Ware bitte in Originalverpackung mit sämtlichem Zubehör und mit allen Verpackungsbestandteilen an uns zurück. Verwenden Sie ggf. eine schützende Umverpackung. Wenn Sie die Originalverpackung nicht mehr besitzen, sorgen Sie bitte mit einer geeigneten Verpackung für einen ausreichenden Schutz vor Transportschäden.</p>
+                
+                <p>2) Senden Sie die Ware bitte nicht unfrei an uns zurück.</p>
+
+                <h3>3a. Kommunikationsrichtlinien</h3>
+
+                <p>Für alle Angelegenheiten im Zusammenhang mit Widerruf, Rücksendung oder Reklamation nutzen Sie bitte ausschließlich den elektronischen Kommunikationsweg:</p>
+
+                <p>E-Mail: info@elementalessence.at</p>
+
+                <p>Bitte geben Sie in Ihrer Kommunikation immer folgende Informationen an:</p>
+
+                <ul class="communication-list">
+                    <li>Ihre Bestellnummer</li>
+                    <li>Das Bestelldatum</li>
+                    <li>Eine detaillierte Beschreibung Ihres Anliegens</li>
+                </ul>
+
+                <p>Wir werden Ihre Anfrage so schnell wie möglich bearbeiten und uns innerhalb von 48 Stunden bei Ihnen melden. Unsere Geschäftszeiten sind Montag bis Freitag von 9:00 bis 17:00 Uhr (ausgenommen gesetzliche Feiertage).</p>
+                
+                <div class="muster-formular">
+                    <h3>4. Muster-Widerrufsformular</h3>
+                    
+                    <p>(Wenn Sie den Vertrag widerrufen wollen, dann füllen Sie bitte dieses Formular aus und senden Sie es uns per E-Mail zu.)</p>
+                    
+                    <p>
+                        AN<br>
+                        Elemental Essence<br>
+                        E-Mail: info@elementalessence.at
+                    </p>
+                    
+                    <p>
+                        Hiermit widerrufe ich<br>
+                        den abgeschlossenen Vertrag über den Kauf folgender Waren:<br><br>
+
+                        Bestellnummer:<br>
+                        Bestellt am:<br>
+                        Erhalten am:<br>
+                        Name und Anschrift des Kunden:<br><br><br>
+                        
+                        Datum
+                    </p>
+                </div>
+                
+                <!-- Contact Box -->
+                <div class="contact-box">
+                    <h3>Haben Sie Fragen zu Ihrem Widerrufsrecht?</h3>
+                    <p>Zögern Sie nicht, uns unter <a href="mailto:info@elementalessence.at">info@elementalessence.at</a> zu kontaktieren.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        ELEMENTAL <span>ESSENCE</span>
+                    </div>
+                    <p class="footer-desc">Eine exklusive Kollektion von Luxusparfums, inspiriert von den Elementen, die unser Universum formen.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#about">Über uns</a></li>
+                        <li><a href="index.html#elements">Kollektionen</a></li>
+                        <li><a href="index.html#product">Shop</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Rechtliches</h4>
+                    <ul class="footer-links">
+                        <li><a href="agb.html">AGB</a></li>
+                        <li><a href="datenschutz.html">Datenschutz</a></li>
+                        <li><a href="#">Impressum</a></li>
+                        <li><a href="widerrufsrecht.html">Widerrufsrecht</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Kontakt</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:info@elementalessence.at">info@elementalessence.at</a></li>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2025 Elemental Essence. Alle Rechte vorbehalten.
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript files -->
+    <script src="js/theme.js"></script>
+    <script src="js/header.js"></script>
+</body>
+</html>

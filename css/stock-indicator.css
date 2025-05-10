@@ -1,0 +1,78 @@
+/* Stock Indicator Styles */
+.stock-indicator {
+    margin: 8px auto;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 6px 12px;
+    border-radius: 20px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    width: auto;
+    max-width: 100%;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.stock-indicator-inline {
+    display: inline-block;
+    margin: 8px 0;
+    vertical-align: middle;
+    min-width: auto;
+}
+
+.stock-indicator-low {
+    background-color: rgba(255, 165, 0, 0.18);
+    color: #e67e00;
+    border: 1px solid rgba(255, 165, 0, 0.3);
+}
+
+.stock-indicator-low span {
+    display: inline-block;
+    text-align: center;
+}
+
+/* Out of stock indicator no longer used - text only shown in button */
+
+/* Collection and Discovery specific indicator placement */
+#collection .stock-indicator,
+#discovery .stock-indicator {
+    margin-top: 12px;
+    margin-bottom: 16px;
+    display: block;
+    width: fit-content;
+}
+
+/* Disabled button styles - enhanced for "Nicht vorrätig" text */
+.btn-disabled {
+    opacity: 0.85;
+    cursor: not-allowed;
+    background-color: #cccccc !important;
+    border-color: #cccccc !important;
+    color: #555555 !important;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.btn-disabled:hover {
+    background-color: #bbbbbb !important;
+    border-color: #bbbbbb !important;
+    color: #444444 !important;
+}
+
+/* Dark theme support */
+.dark-theme .stock-indicator-low {
+    background-color: rgba(255, 165, 0, 0.22);
+    color: #ffa500;
+    border: 1px solid rgba(255, 165, 0, 0.35);
+}
+
+.dark-theme .btn-disabled {
+    opacity: 0.85;
+    background-color: #444444 !important;
+    border-color: #444444 !important;
+    color: #dddddd !important;
+    font-weight: 600;
+}

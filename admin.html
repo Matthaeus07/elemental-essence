@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemental Essence - Admin Panel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <!-- Login-Overlay -->
+    <div id="loginOverlay" class="overlay">
+        <div class="login-container">
+            <div class="login-header">
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="Elemental Essence Logo" class="login-logo">
+                </a>
+                <h1>Admin <span>Panel</span></h1>
+            </div>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Benutzername</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Passwort</label>
+                    <input type="password" id="password" name="password" required>
+                    <div id="passwordError" class="password-error" style="display: none;">Falsches Passwort</div>
+                </div>
+                <button type="submit" class="btn btn-primary">Anmelden</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Admin Panel -->
+    <div class="admin-container" id="adminPanel" style="display: none;">
+        <header class="admin-header">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="Elemental Essence Logo" class="admin-logo">
+                    <span class="admin-title">ELEMENTAL <span>ESSENCE</span></span>
+                </a>
+            </div>
+            <div class="user-info">
+                <span class="username" id="currentUsername">Admin</span>
+                <span class="user-role" id="currentUserRole">(admin)</span>
+                <button id="logoutBtn" class="btn-logout"><i class="fas fa-sign-out-alt"></i> Abmelden</button>
+            </div>
+        </header>
+
+        <div class="admin-content">
+            <div class="admin-sidebar">
+                <nav class="admin-nav">
+                    <ul>
+                        <li class="nav-item active" data-section="dashboard">
+                            <i class="fas fa-chart-bar"></i> Dashboard
+                        </li>
+                        <li class="nav-item" data-section="products">
+                            <i class="fas fa-bottle-droplet"></i> Produkte
+                        </li>
+                        <li class="nav-item" data-section="accounts">
+                            <i class="fas fa-users"></i> Konten
+                        </li>
+                        <li class="nav-item" data-section="settings">
+                            <i class="fas fa-cog"></i> Einstellungen
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="admin-main">
+                <!-- Dashboard Section -->
+                <section id="dashboard" class="admin-section active">
+                    <h1 class="section-title">Dashboard</h1>
+                    <div class="stats-container">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-bottle-droplet"></i>
+                            </div>
+                            <div class="stat-details">
+                                <span class="stat-count" id="totalProducts">7</span>
+                                <span class="stat-label">Produkte</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-box"></i>
+                            </div>
+                            <div class="stat-details">
+                                <span class="stat-count" id="totalStock">83</span>
+                                <span class="stat-label">Produkte auf Lager</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                            <div class="stat-details">
+                                <span class="stat-count" id="lowStock">1</span>
+                                <span class="stat-label">Niedriger Bestand</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-times-circle"></i>
+                            </div>
+                            <div class="stat-details">
+                                <span class="stat-count" id="outOfStock">1</span>
+                                <span class="stat-label">Ausverkauft</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="low-stock-section">
+                        <h2>Produkte mit niedrigem Bestand</h2>
+                        <table class="admin-table" id="lowStockTable">
+                            <thead>
+                                <tr>
+                                    <th>Produkt</th>
+                                    <th>SKU</th>
+                                    <th>Kategorie</th>
+                                    <th>Bestand</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Wird per JavaScript gefüllt -->
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- Products Section -->
+                <section id="products" class="admin-section">
+                    <h1 class="section-title">Produkte verwalten</h1>
+                    <div class="product-list">
+                        <!-- Wird per JavaScript gefüllt -->
+                    </div>
+                </section>
+                
+                <!-- Accounts Section -->
+                <section id="accounts" class="admin-section">
+                    <h1 class="section-title">Konten verwalten</h1>
+                    <div class="accounts-container">
+                        <div class="accounts-header">
+                            <div class="accounts-search">
+                                <input type="text" id="accountSearch" placeholder="Benutzer suchen..." class="search-input">
+                            </div>
+                            <div class="accounts-actions" id="adminAccountActions">
+                                <button class="btn btn-primary" id="createAccountBtn">
+                                    <i class="fas fa-plus"></i> Neues Konto
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="account-list">
+                            <!-- Wird per JavaScript gefüllt -->
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Settings Section -->
+                <section id="settings" class="admin-section">
+                    <h1 class="section-title">Einstellungen</h1>
+                    <div class="settings-container">
+                        <!-- Updated Database Card -->
+                        <div class="settings-card">
+                            <h3>Datenbank</h3>
+                            <div class="setting-item">
+                                <label>Datenbank exportieren:</label>
+                                <button class="btn btn-secondary" id="exportDbBtn">Datenbank herunterladen</button>
+                            </div>
+                        </div>
+
+                        <div class="settings-card">
+                            <h3>Konto</h3>
+                            <div class="setting-item">
+                                <label>Passwort ändern:</label>
+                                <div class="password-inputs">
+                                    <input type="password" id="newPassword" placeholder="Neues Passwort" class="password-input">
+                                    <input type="password" id="confirmPassword" placeholder="Passwort bestätigen" class="password-input">
+                                    <div id="passwordError" class="password-error" style="display: none;">Die Passwörter stimmen nicht überein</div>
+                                </div>
+                                <button id="updatePasswordBtn" class="btn btn-secondary">Passwort aktualisieren</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Product Modal -->
+    <div id="editProductModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Produkt bearbeiten</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="editProductForm">
+                    <input type="hidden" id="editProductId">
+                    <div class="form-group">
+                        <label for="editProductName">Produkt:</label>
+                        <input type="text" id="editProductName" disabled>
+                    </div>
+                    <div class="form-group">
+                        <label for="editCategory">Kategorie:</label>
+                        <select id="editCategory" required>
+                            <option value="individual">Einzelduft</option>
+                            <option value="collection">Kollektion</option>
+                            <option value="discovery">Discovery Set</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="editPrice">Preis (€):</label>
+                        <input type="number" id="editPrice" min="0" step="0.01" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="editNewStock">Bestand:</label>
+                        <input type="number" id="editNewStock" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="editNewThreshold">Schwellenwert:</label>
+                        <input type="number" id="editNewThreshold" min="1" required>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary close-btn">Abbrechen</button>
+                        <button type="submit" class="btn btn-primary">Speichern</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Account Modal -->
+    <div id="accountModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="accountModalTitle">Konto bearbeiten</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="accountForm">
+                    <input type="hidden" id="accountId">
+                    <div class="form-group">
+                        <label for="accountUsername">Benutzername:</label>
+                        <input type="text" id="accountUsername" required>
+                    </div>
+                    <div class="form-group" id="passwordFormGroup">
+                        <label for="accountPassword">Passwort:</label>
+                        <input type="password" id="accountPassword" placeholder="Neues Passwort">
+                        <small class="form-hint">Erforderlich für neue Konten.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="accountRole">Rolle:</label>
+                        <select id="accountRole" required>
+                            <option value="admin">Admin</option>
+                            <option value="user">Benutzer</option>
+                        </select>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary close-btn">Abbrechen</button>
+                        <button type="submit" class="btn btn-primary">Speichern</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Delete Confirmation Modal -->
+    <div id="deleteConfirmModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Benutzer löschen</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="delete-confirmation">
+                    <i class="fas fa-exclamation-triangle delete-icon"></i>
+                    <p>Möchten Sie den Benutzer <span id="deleteUsername">Username</span> wirklich löschen?</p>
+                    <p class="delete-warning">Diese Aktion kann nicht rückgängig gemacht werden.</p>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary close-btn">Abbrechen</button>
+                    <button type="button" class="btn btn-danger" id="confirmDeleteBtn">Löschen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/admin.js"></script>
+</body>
+</html>

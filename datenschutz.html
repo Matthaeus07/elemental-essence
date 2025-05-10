@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemental Essence - Datenschutzerklärung</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Datenschutzerklärung für Elemental Essence - Informationen zur Verarbeitung Ihrer personenbezogenen Daten.">
+    <meta name="keywords" content="Elemental Essence, Datenschutz, Datenschutzerklärung, Privatsphäre, Datenverarbeitung, Luxusparfum, DSGVO">
+    <meta name="author" content="Elemental Essence">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.elementalessence.at/datenschutz">
+    <meta property="og:title" content="Datenschutzerklärung - Elemental Essence - Luxusparfums inspiriert von den fünf Elementen">
+    <meta property="og:description" content="Erfahren Sie mehr zum Schutz Ihrer Daten und Ihrer Privatsphäre bei Elemental Essence.">
+    <meta property="og:image" content="assets/logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.elementalessence.at/datenschutz">
+    <meta property="twitter:title" content="Datenschutzerklärung - Elemental Essence - Luxusparfums inspiriert von den fünf Elementen">
+    <meta property="twitter:description" content="Erfahren Sie mehr zum Schutz Ihrer Daten und Ihrer Privatsphäre bei Elemental Essence.">
+    <meta property="twitter:image" content="assets/logo.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.elementalessence.at/datenschutz">
+    
+    <!-- Preload critical CSS -->
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="preload" href="css/dark-theme.css" as="style">
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" as="font" crossorigin>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dark-theme.css">
+    
+    <style>
+        /* Specific styles for Datenschutz page - based on AGB styles */
+        .datenschutz-hero {
+            height: 45vh;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            background-color: var(--light-bg);
+            padding-top: 80px;
+        }
+
+        .dark-theme .datenschutz-hero {
+            background-color: var(--dark-bg);
+        }
+
+        .datenschutz-hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .datenschutz-hero h1 {
+            font-size: 48px;
+            font-weight: 350;
+            letter-spacing: 5px;
+            margin-bottom: 20px;
+            color: var(--dark-text);
+        }
+
+        .dark-theme .datenschutz-hero h1 {
+            color: var(--light-text);
+        }
+
+        .datenschutz-hero h1 span {
+            color: var(--gold);
+        }
+
+        .datenschutz-hero p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            color: var(--medium-text);
+        }
+
+        .datenschutz-section {
+            padding: 80px 0 120px;
+            background-color: var(--light-bg-2);
+            position: relative;
+        }
+
+        .dark-theme .datenschutz-section {
+            background-color: var(--dark-bg-2);
+        }
+
+        .datenschutz-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .datenschutz-container h2 {
+            color: var(--gold);
+            margin-bottom: 25px;
+            font-size: 30px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .datenschutz-container h2::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 1px;
+            background-color: var(--gold);
+            bottom: 0;
+            left: 0;
+        }
+
+        .datenschutz-container h3 {
+            color: var(--gold);
+            margin: 50px 0 15px;
+            font-size: 25px;
+        }
+
+        .datenschutz-container p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+            color: var(--medium-text);
+        }
+
+        .datenschutz-container a {
+            color: var(--gold);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .datenschutz-container a:hover {
+            text-decoration: underline;
+        }
+
+        .datenschutz-section ol {
+            counter-reset: item;
+            padding-left: 0;
+            margin-bottom: 30px;
+        }
+
+        .datenschutz-section ol > li {
+            counter-increment: item;
+            display: block;
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 25px;
+            color: var(--medium-text);
+            line-height: 1.6;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .datenschutz-section ol > li:before {
+            content: counter(item) ".";
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: 600;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.1em;
+        }
+
+        .datenschutz-section ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 20px 0;
+        }
+
+        .datenschutz-section ul li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 10px;
+            line-height: 1.6;
+            color: var(--medium-text);
+        }
+
+        .datenschutz-section ul li:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 6px;
+            height: 6px;
+            background-color: var(--gold);
+            border-radius: 50%;
+        }
+
+        .contact-box {
+            margin-top: 50px;
+            background-color: rgba(184, 134, 11, 0.05);
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .dark-theme .contact-box {
+            background-color: rgba(212, 175, 55, 0.08);
+            border-color: rgba(212, 175, 55, 0.2);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-box h3 {
+            margin-top: 0;
+            color: var(--dark-text);
+            font-size: 20px;
+            margin-bottom: 15px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .dark-theme .contact-box h3 {
+            color: var(--light-text);
+        }
+
+        .contact-box p {
+            margin-bottom: 0;
+        }
+
+        .highlight-box {
+            background-color: rgba(184, 134, 11, 0.08);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+            border-left: 3px solid var(--gold);
+        }
+
+        .dark-theme .highlight-box {
+            background-color: rgba(212, 175, 55, 0.12);
+        }
+
+        /* Responsive styles */
+        @media screen and (max-width: 800px) {
+            .datenschutz-hero h1 {
+                font-size: 32px;
+            }
+            
+            .datenschutz-hero p {
+                font-size: 16px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .datenschutz-hero {
+                height: 60vh;
+                padding-top: 90px;
+                min-height: 350px;
+            }
+
+            .datenschutz-hero h1 {
+                font-size: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .datenschutz-container {
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.png" alt="Elemental Essence Logo" width="40" height="40" id="logoImage">
+                    <h4>ELEMENTAL<span>ESSENCE</span></h4>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html#about">Unsere Philosophie</a></li>
+                        <li><a href="index.html#elements">Die Elemente</a></li>
+                        <li><a href="index.html#product">Produkte</a></li>
+                        <li><a href="index.html#footer">Kontakt</a></li>
+                        <li>
+                            <a href="cart.html" class="cart-button">
+                                <i class="fas fa-shopping-cart"></i> <span class="cart-text">Warenkorb</span>
+                            </a>
+                        </li>
+                        <!-- Theme toggle will be added by JavaScript -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Orbs Background -->
+    <section class="datenschutz-hero">
+        <div class="element-orbs">
+            <div class="orb ignis-orb"></div>
+            <div class="orb aqua-orb"></div>
+            <div class="orb aura-orb"></div>
+            <div class="orb terra-orb"></div>
+            <div class="orb aether-orb"></div>
+        </div>
+        <div class="container">
+            <div class="datenschutz-hero-content">
+                <h1>DATENSCHUTZ<span>ERKLÄRUNG</span></h1>
+                <p>Informationen zum Schutz Ihrer Daten und zu Ihren Rechten gemäß der Datenschutz-Grundverordnung (DSGVO).</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Datenschutz Content Section -->
+    <section class="datenschutz-section">
+        <div class="container">
+            <div class="datenschutz-container">
+                <h2>Datenschutzerklärung</h2>
+                
+                <p>Der Schutz Ihrer persönlichen Daten ist uns ein besonderes Anliegen. In dieser Datenschutzerklärung informieren wir Sie über die wichtigsten Aspekte der Datenverarbeitung im Rahmen unserer Website. Wir verarbeiten Ihre Daten ausschließlich auf Grundlage der gesetzlichen Bestimmungen (DSGVO, TKG 2003).</p>
+                
+                <h3>1. Verantwortlicher für die Datenverarbeitung</h3>
+                
+                <p>Verantwortlich für die Datenverarbeitung auf dieser Website ist:</p>
+                <p>Elemental Essence<br>
+                E-Mail: <a href="mailto:info@elementalessence.at">info@elementalessence.at</a></p>
+                
+                <h3>2. Erhebung und Speicherung personenbezogener Daten sowie Art und Zweck ihrer Verwendung</h3>
+                
+                <ol>
+                    <li><strong>Beim Besuch der Website</strong><br>
+                    Beim Aufrufen unserer Website werden durch den auf Ihrem Endgerät zum Einsatz kommenden Browser automatisch Informationen an den Server unserer Website gesendet. Diese Informationen werden temporär in einem sog. Logfile gespeichert. Folgende Informationen werden dabei ohne Ihr Zutun erfasst und bis zur automatisierten Löschung gespeichert:
+                    <ul>
+                        <li>IP-Adresse des anfragenden Rechners</li>
+                        <li>Datum und Uhrzeit des Zugriffs</li>
+                        <li>Name und URL der abgerufenen Datei</li>
+                        <li>Website, von der aus der Zugriff erfolgt (Referrer-URL)</li>
+                        <li>verwendeter Browser und ggf. das Betriebssystem Ihres Rechners sowie der Name Ihres Access-Providers</li>
+                    </ul>
+                    Die genannten Daten werden durch uns zu folgenden Zwecken verarbeitet:
+                    <ul>
+                        <li>Gewährleistung eines reibungslosen Verbindungsaufbaus der Website</li>
+                        <li>Gewährleistung einer komfortablen Nutzung unserer Website</li>
+                        <li>Auswertung der Systemsicherheit und -stabilität</li>
+                        <li>zu weiteren administrativen Zwecken</li>
+                    </ul>
+                    Die Rechtsgrundlage für die Datenverarbeitung ist unser berechtigtes Interesse an der technischen Funktionsfähigkeit und Optimierung unserer Website.</li>
+                    
+                    <li><strong>Bei Bestellungen in unserem Online-Shop</strong><br>
+                    Wenn Sie in unserem Online-Shop bestellen, erheben wir folgende Informationen:
+                    <ul>
+                        <li>Anrede, Vorname, Nachname</li>
+                        <li>E-Mail-Adresse</li>
+                        <li>Postanschrift</li>
+                        <li>Zahlungsinformationen (abhängig von der gewählten Zahlungsmethode)</li>
+                        <li>Informationen zu den bestellten Produkten</li>
+                    </ul>
+                    Die Erhebung dieser Daten erfolgt zur Erfüllung des Kaufvertrages mit Ihnen. Die Verarbeitung der Daten ist für die Abwicklung des Kaufvertrages, die Lieferung der Ware und für die Abwicklung der Zahlung erforderlich.</li>
+                    
+                    <li><strong>Bei Anmeldung für unseren Newsletter</strong><br>
+                    Wenn Sie sich für unseren Newsletter anmelden, erheben wir folgende Daten:
+                    <ul>
+                        <li>E-Mail-Adresse</li>
+                        <li>Ggf. Name (freiwillige Angabe)</li>
+                    </ul>
+                    Diese Daten verwenden wir ausschließlich, um Ihnen regelmäßig unseren Newsletter zu übersenden. Die Verarbeitung erfolgt auf Grundlage Ihrer Einwilligung. Sie können Ihre Einwilligung jederzeit widerrufen, indem Sie den Abmeldelink im Newsletter anklicken oder uns eine entsprechende Mitteilung senden. Die Rechtmäßigkeit der bereits erfolgten Datenverarbeitungsvorgänge bleibt vom Widerruf unberührt.</li>
+                </ol>
+                
+                <h3>3. Weitergabe von Daten an Dritte</h3>
+                
+                <p>Wir geben Ihre persönlichen Daten nur an Dritte weiter, wenn:</p>
+                <ol>
+                    <li>Sie Ihre ausdrückliche Einwilligung dazu erteilt haben</li>
+                    <li>die Weitergabe zur Abwicklung von Vertragsverhältnissen mit Ihnen erforderlich ist</li>
+                    <li>eine gesetzliche Verpflichtung zur Weitergabe besteht</li>
+                    <li>die Weitergabe zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen erforderlich ist und kein Grund zur Annahme besteht, dass Sie ein überwiegendes schutzwürdiges Interesse an der Nichtweitergabe Ihrer Daten haben</li>
+                </ol>
+                
+                <p>Im Rahmen des Bestellprozesses und der Vertragsabwicklung geben wir Ihre Daten an folgende Empfänger weiter:</p>
+                <ul>
+                    <li><strong>Zahlungsdienstleister:</strong> Für die Abwicklung von Zahlungen arbeiten wir mit dem Zahlungsdienstleister Stripe zusammen. Weitere Informationen zum Datenschutz bei Stripe finden Sie unter: <a href="https://stripe.com/at/privacy" target="_blank">https://stripe.com/at/privacy</a>.</li>
+                    <li><strong>Versanddienstleister:</strong> Zur Zustellung Ihrer Bestellung geben wir Ihren Namen und Ihre Lieferadresse an den von uns beauftragten Versanddienstleister weiter.</li>
+                </ul>
+                
+                <h3>4. Cookies und Analysedienste</h3>
+                
+                <p>Wir verwenden auf unserer Webseite Cookies. Hierbei handelt es sich um kleine Dateien, die Ihr Browser automatisch erstellt und die auf Ihrem Endgerät gespeichert werden, wenn Sie unsere Seite besuchen. Cookies richten auf Ihrem Endgerät keinen Schaden an, enthalten keine Viren, Trojaner oder sonstige Schadsoftware.</p>
+                
+                <p>Wir setzen folgende Arten von Cookies ein:</p>
+                <ul>
+                    <li><strong>Technisch notwendige Cookies:</strong> Diese Cookies sind notwendig, damit unsere Website funktioniert. Sie ermöglichen grundlegende Funktionen wie Seitennavigation, Warenkorbfunktion und den Zugang zu gesicherten Bereichen der Website.</li>
+                    <li><strong>Präferenz-Cookies:</strong> Diese Cookies ermöglichen unserer Website, sich an Ihre Präferenzen zu erinnern, wie z.B. Ihre bevorzugte Sprache oder die Region, in der Sie sich befinden.</li>
+                    <li><strong>Analyse-Cookies:</strong> Diese Cookies helfen uns zu verstehen, wie Besucher mit unserer Website interagieren, indem sie Informationen anonym sammeln und melden.</li>
+                </ul>
+                
+                <p><strong>Google Analytics</strong></p>
+                <p>Wir setzen auf Grundlage unserer berechtigten Interessen (d.h. Interesse an der Analyse, Optimierung und wirtschaftlichem Betrieb unseres Onlineangebotes) Google Analytics ein, einen Webanalysedienst der Google LLC („Google"). Google verwendet Cookies. Die durch das Cookie erzeugten Informationen über Benutzung des Onlineangebotes durch die Nutzer werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert.</p>
+                
+                <p>Google ist unter dem Privacy-Shield-Abkommen zertifiziert und bietet hierdurch eine Garantie, das europäische Datenschutzrecht einzuhalten. Weitere Informationen zu Nutzungsbedingungen und Datenschutz finden Sie unter <a href="https://www.google.com/analytics/terms/de.html" target="_blank">https://www.google.com/analytics/terms/de.html</a> bzw. unter <a href="https://policies.google.com/?hl=de" target="_blank">https://policies.google.com/?hl=de</a>.</p>
+                
+                <p>Sie können die Speicherung der Cookies durch eine entsprechende Einstellung Ihrer Browser-Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich werden nutzen können. Sie können darüber hinaus die Erfassung der durch das Cookie erzeugten und auf Ihre Nutzung der Website bezogenen Daten (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung dieser Daten durch Google verhindern, indem sie das unter folgendem Link verfügbare Browser-Plugin herunterladen und installieren: <a href="https://tools.google.com/dlpage/gaoptout?hl=de" target="_blank">https://tools.google.com/dlpage/gaoptout?hl=de</a>.</p>
+                
+                <div class="highlight-box">
+                    <p><strong>Cookie-Hinweis:</strong> Sie können Ihre Cookie-Einstellungen jederzeit in Ihrem Browser verwalten, bzw. so einstellen, dass Sie über das Setzen von Cookies informiert werden und Cookies nur im Einzelfall erlauben, die Annahme von Cookies für bestimmte Fälle oder generell ausschließen sowie das automatische Löschen der Cookies beim Schließen des Browsers aktivieren.</p>
+                </div>
+                
+                <h3>5. Newsletter und E-Mail-Marketing</h3>
+                
+                <p>Wenn Sie unseren Newsletter abonnieren, werden Ihre Daten ausschließlich für den Versand unseres Newsletters verwendet. Sie können unseren Newsletter entweder über ein separates Anmeldeformular auf unserer Website oder im Rahmen des Bestellprozesses abonnieren, indem Sie das entsprechende Kästchen anklicken.</p>
+                
+                <p>Für die Newsletter-Anmeldung benötigen wir Ihre E-Mail-Adresse. Optional können Sie weitere Daten wie Ihren Namen angeben, damit wir Sie persönlich ansprechen können. Mit der Anmeldung zum Newsletter willigen Sie in den Empfang des Newsletters ein.</p>
+                
+                <p>Die Daten, die Sie für den Bezug des Newsletters eingeben, werden bis zu Ihrer Abmeldung vom Newsletter bei uns gespeichert und nach der Abbestellung des Newsletters gelöscht. Daten, die zu anderen Zwecken bei uns gespeichert wurden, bleiben hiervon unberührt.</p>
+                
+                <p>Sie können den Newsletter jederzeit abbestellen, indem Sie auf den dafür vorgesehenen Link im Newsletter klicken oder uns eine entsprechende Mitteilung zukommen lassen.</p>
+                
+                <h3>6. Social Media</h3>
+                
+                <p>Wir unterhalten Onlinepräsenzen innerhalb sozialer Netzwerke, um mit Ihnen kommunizieren und Sie über unsere Produkte informieren zu können. Wir weisen darauf hin, dass dabei Daten außerhalb des Raums der Europäischen Union verarbeitet werden können. Dies kann Risiken für die Nutzer mit sich bringen, weil z.B. die Durchsetzung der Rechte der Nutzer erschwert werden könnte.</p>
+                
+                <p>Wenn Sie unsere Social-Media-Seiten besuchen, können Daten direkt an die Betreiber der sozialen Netzwerke übermittelt werden. Wir haben keinen Einfluss auf die Art und den Umfang der übermittelten Daten. Für weitere Informationen zum Datenschutz in sozialen Netzwerken lesen Sie bitte die Datenschutzerklärungen der jeweiligen Anbieter.</p>
+                
+                <p>Unsere Website enthält lediglich Links zu unseren Social-Media-Präsenzen. Es werden keine Social Media Plugins eingesetzt, die bereits beim Besuch unserer Website Daten an die sozialen Netzwerke übermitteln.</p>
+                
+                <h3>7. Betroffenenrechte</h3>
+                
+                <p>Sie haben gegenüber uns folgende Rechte hinsichtlich der Sie betreffenden personenbezogenen Daten:</p>
+                <ul>
+                    <li><strong>Recht auf Auskunft</strong>: Sie können Auskunft über Ihre von uns verarbeiteten personenbezogenen Daten verlangen.</li>
+                    <li><strong>Recht auf Berichtigung</strong>: Sie können unverzüglich die Berichtigung unrichtiger oder die Vervollständigung Ihrer bei uns gespeicherten personenbezogenen Daten verlangen.</li>
+                    <li><strong>Recht auf Löschung</strong>: Sie können die Löschung Ihrer bei uns gespeicherten personenbezogenen Daten verlangen, soweit nicht die Verarbeitung zur Ausübung des Rechts auf freie Meinungsäußerung und Information, zur Erfüllung einer rechtlichen Verpflichtung, aus Gründen des öffentlichen Interesses oder zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen erforderlich ist.</li>
+                    <li><strong>Recht auf Einschränkung der Verarbeitung</strong>: Sie können die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten verlangen.</li>
+                    <li><strong>Recht auf Datenübertragbarkeit</strong>: Sie können verlangen, dass wir Ihnen Ihre personenbezogenen Daten, die Sie uns bereitgestellt haben, in einem strukturierten, gängigen und maschinenlesbaren Format übermitteln.</li>
+                    <li><strong>Beschwerderecht bei einer Aufsichtsbehörde</strong>: Sie haben das Recht auf Beschwerde bei einer Datenschutz-Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres Aufenthaltsorts, ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes, wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer personenbezogenen Daten gegen die Datenschutzgesetze verstößt.</li>
+                </ul>
+                
+                <h3>8. Widerspruchsrecht</h3>
+                
+                <p>Soweit wir personenbezogene Daten auf Grundlage von berechtigten Interessen verarbeiten, haben Sie das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit gegen die Verarbeitung Widerspruch einzulegen.</p>
+                
+                <p>Wenn Sie Widerspruch einlegen, werden wir Ihre personenbezogenen Daten nicht mehr verarbeiten, es sei denn, wir können zwingende schutzwürdige Gründe für die Verarbeitung nachweisen, die Ihre Interessen, Rechte und Freiheiten überwiegen, oder die Verarbeitung dient der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen.</p>
+                
+                <h3>9. Datensicherheit</h3>
+                
+                <p>Wir verwenden innerhalb des Website-Besuchs das verbreitete SSL-Verfahren (Secure Socket Layer) in Verbindung mit der jeweils höchsten Verschlüsselungsstufe, die von Ihrem Browser unterstützt wird. In der Regel handelt es sich dabei um eine 256-Bit-Verschlüsselung. Ob eine einzelne Seite unseres Internetauftrittes verschlüsselt übertragen wird, erkennen Sie an der geschlossenen Darstellung des Schlüssel- beziehungsweise Schloss-Symbols in der unteren Statusleiste Ihres Browsers.</p>
+                
+                <p>Wir bedienen uns im Übrigen geeigneter technischer und organisatorischer Sicherheitsmaßnahmen, um Ihre Daten gegen zufällige oder vorsätzliche Manipulationen, teilweisen oder vollständigen Verlust, Zerstörung oder gegen den unbefugten Zugriff Dritter zu schützen. Unsere Sicherheitsmaßnahmen werden entsprechend der technologischen Entwicklung fortlaufend verbessert.</p>
+                
+                <h3>10. Aktualität und Änderung dieser Datenschutzerklärung</h3>
+                
+                <p>Diese Datenschutzerklärung ist aktuell gültig und hat den Stand April 2025.</p>
+                
+                <p>Durch die Weiterentwicklung unserer Website und Angebote darüber oder aufgrund geänderter gesetzlicher beziehungsweise behördlicher Vorgaben kann es notwendig werden, diese Datenschutzerklärung zu ändern. Die jeweils aktuelle Datenschutzerklärung kann jederzeit auf der Website unter <a href="https://www.elementalessence.at/datenschutz">https://www.elementalessence.at/datenschutz</a> von Ihnen abgerufen und ausgedruckt werden.</p>
+                
+                <!-- Contact Box -->
+                <div class="contact-box">
+                    <h3>Haben Sie Fragen zum Datenschutz?</h3>
+                    <p>Bei Fragen zur Erhebung, Verarbeitung oder Nutzung Ihrer personenbezogenen Daten kontaktieren Sie uns bitte unter <a href="mailto:info@elementalessence.at">info@elementalessence.at</a>.</p>
+                </div>
+                
+                <p style="text-align: right; margin-top: 40px; font-size: 14px; color: var(--medium-text);">Stand: April 2025</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        ELEMENTAL <span>ESSENCE</span>
+                    </div>
+                    <p class="footer-desc">Eine exklusive Kollektion von Luxusparfums, inspiriert von den Elementen, die unser Universum formen.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#about">Über uns</a></li>
+                        <li><a href="index.html#elements">Kollektionen</a></li>
+                        <li><a href="index.html#product">Shop</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Rechtliches</h4>
+                    <ul class="footer-links">
+                        <li><a href="agb.html">AGB</a></li>
+                        <li><a href="datenschutz.html">Datenschutz</a></li>
+                        <li><a href="#">Impressum</a></li>
+                        <li><a href="widerrufsrecht.html">Widerrufsrecht</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Kontakt</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:info@elementalessence.at">info@elementalessence.at</a></li>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2025 Elemental Essence. Alle Rechte vorbehalten.
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript files -->
+    <script src="js/theme.js"></script>
+    <script src="js/header.js"></script>
+</body>
+</html>

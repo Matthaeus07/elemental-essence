@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemental Essence - AGB</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Allgemeine Geschäftsbedingungen für Elemental Essence - Informationen zu Ihren Rechten und Pflichten beim Kauf unserer Luxusparfums.">
+    <meta name="keywords" content="Elemental Essence, AGB, Geschäftsbedingungen, Nutzungsbedingungen, Luxusparfum, Vertragsbedingungen">
+    <meta name="author" content="Elemental Essence">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.elementalessence.at/agb">
+    <meta property="og:title" content="AGB - Elemental Essence - Luxusparfums inspiriert von den fünf Elementen">
+    <meta property="og:description" content="Erfahren Sie mehr über die allgemeinen Geschäftsbedingungen von Elemental Essence.">
+    <meta property="og:image" content="assets/logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.elementalessence.at/agb">
+    <meta property="twitter:title" content="AGB - Elemental Essence - Luxusparfums inspiriert von den fünf Elementen">
+    <meta property="twitter:description" content="Erfahren Sie mehr über die allgemeinen Geschäftsbedingungen von Elemental Essence.">
+    <meta property="twitter:image" content="assets/logo.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.elementalessence.at/agb">
+    
+    <!-- Preload critical CSS -->
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="preload" href="css/dark-theme.css" as="style">
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" as="font" crossorigin>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dark-theme.css">
+    
+    <style>
+        /* Specific styles for AGB page - based on widerrufsrecht styles */
+        .agb-hero {
+            height: 45vh;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            background-color: var(--light-bg);
+            padding-top: 80px;
+        }
+
+        .dark-theme .agb-hero {
+            background-color: var(--dark-bg);
+        }
+
+        .agb-hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .agb-hero h1 {
+            font-size: 48px;
+            font-weight: 350;
+            letter-spacing: 5px;
+            margin-bottom: 20px;
+            color: var(--dark-text);
+        }
+
+        .dark-theme .agb-hero h1 {
+            color: var(--light-text);
+        }
+
+        .agb-hero h1 span {
+            color: var(--gold);
+        }
+
+        .agb-hero p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            color: var(--medium-text);
+        }
+
+        .agb-section {
+            padding: 80px 0 120px;
+            background-color: var(--light-bg-2);
+            position: relative;
+        }
+
+        .dark-theme .agb-section {
+            background-color: var(--dark-bg-2);
+        }
+
+        .agb-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .agb-container h2 {
+            color: var(--gold);
+            margin-bottom: 25px;
+            font-size: 30px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .agb-container h2::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 1px;
+            background-color: var(--gold);
+            bottom: 0;
+            left: 0;
+        }
+
+        .agb-container h3 {
+            color: var(--gold);
+            margin: 50px 0 15px;
+            font-size: 25px;
+        }
+
+        .agb-container p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+            color: var(--medium-text);
+        }
+
+        .agb-container a {
+            color: var(--gold);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .agb-container a:hover {
+            text-decoration: underline;
+        }
+
+        .agb-section ol {
+            counter-reset: item;
+            padding-left: 0;
+            margin-bottom: 30px;
+        }
+
+        .agb-section ol > li {
+            counter-increment: item;
+            display: block;
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 25px;
+            color: var(--medium-text);
+            line-height: 1.6;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .agb-section ol > li:before {
+            content: counter(item) ".";
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: 600;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.1em;
+        }
+
+        .agb-section ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 20px 0;
+        }
+
+        .agb-section ul li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 10px;
+            line-height: 1.6;
+            color: var(--medium-text);
+        }
+
+        .agb-section ul li:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 6px;
+            height: 6px;
+            background-color: var(--gold);
+            border-radius: 50%;
+        }
+
+        .contact-box {
+            margin-top: 50px;
+            background-color: rgba(184, 134, 11, 0.05);
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .dark-theme .contact-box {
+            background-color: rgba(212, 175, 55, 0.08);
+            border-color: rgba(212, 175, 55, 0.2);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-box h3 {
+            margin-top: 0;
+            color: var(--dark-text);
+            font-size: 20px;
+            margin-bottom: 15px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .dark-theme .contact-box h3 {
+            color: var(--light-text);
+        }
+
+        .contact-box p {
+            margin-bottom: 0;
+        }
+
+        .important-notice {
+            background-color: rgba(184, 134, 11, 0.08);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+            border-left: 3px solid var(--gold);
+        }
+
+        .dark-theme .important-notice {
+            background-color: rgba(212, 175, 55, 0.12);
+        }
+
+        /* Responsive styles */
+        @media screen and (max-width: 768px) {
+            .agb-hero h1 {
+                font-size: 36px;
+            }
+            
+            .agb-hero p {
+                font-size: 16px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .agb-hero {
+                height: 60vh;
+                padding-top: 90px;
+                min-height: 350px;
+            }
+
+            .agb-hero h1 {
+                font-size: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .agb-container {
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.png" alt="Elemental Essence Logo" width="40" height="40" id="logoImage">
+                    <h4>ELEMENTAL<span>ESSENCE</span></h4>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html#about">Unsere Philosophie</a></li>
+                        <li><a href="index.html#elements">Die Elemente</a></li>
+                        <li><a href="index.html#product">Produkte</a></li>
+                        <li><a href="index.html#footer">Kontakt</a></li>
+                        <li>
+                            <a href="cart.html" class="cart-button">
+                                <i class="fas fa-shopping-cart"></i> <span class="cart-text">Warenkorb</span>
+                            </a>
+                        </li>
+                        <!-- Theme toggle will be added by JavaScript -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Orbs Background -->
+    <section class="agb-hero">
+        <div class="element-orbs">
+            <div class="orb ignis-orb"></div>
+            <div class="orb aqua-orb"></div>
+            <div class="orb aura-orb"></div>
+            <div class="orb terra-orb"></div>
+            <div class="orb aether-orb"></div>
+        </div>
+        <div class="container">
+            <div class="agb-hero-content">
+                <h1>ALLGEMEINE GESCHÄFTS<span>BEDINGUNGEN</span></h1>
+                <p>Unsere vertraglichen Vereinbarungen für den Kauf unserer exklusiven Parfüms.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- AGB Content Section -->
+    <section class="agb-section">
+        <div class="container">
+            <div class="agb-container">
+                <h2>Allgemeine Geschäftsbedingungen (AGB)</h2>
+                
+                <p>Willkommen auf unserer Website. Wenn Sie diese Website weiterhin nutzen, erklären Sie sich mit den folgenden Nutzungsbedingungen einverstanden, die zusammen mit unserer Datenschutzrichtlinie die Beziehung zwischen Elemental Essence und Ihnen in Bezug auf diese Website regeln. Falls Sie mit einem Teil dieser Geschäftsbedingungen nicht einverstanden sind, bitten wir Sie, unsere Website nicht zu nutzen.</p>
+                
+                <p>Der Begriff 'Elemental Essence' oder 'wir' bezieht sich auf den Eigentümer der Website. Der Begriff 'Sie' bezieht sich auf den Nutzer oder Besucher unserer Website.</p>
+                
+                <h3>1. Allgemeine Bestimmungen</h3>
+                
+                <ol>
+                    <li>Die Inhalte der Seiten dieser Website dienen ausschließlich zu Ihrer allgemeinen Information und Nutzung. Sie können ohne vorherige Ankündigung geändert werden.</li>
+                    
+                    <li>Diese Website verwendet Cookies, um Ihre Browsing-Präferenzen zu überwachen. Wenn Sie die Verwendung von Cookies zulassen, können die folgenden personenbezogenen Daten von uns gespeichert und zur Nutzung durch Dritte verwendet werden.</li>
+                    
+                    <li>Weder wir noch Dritte bieten irgendeine Garantie oder Gewährleistung bezüglich der Genauigkeit, Aktualität, Leistung, Vollständigkeit oder Eignung der auf dieser Website gefundenen oder angebotenen Informationen und Materialien für einen bestimmten Zweck. Sie erkennen an, dass solche Informationen und Materialien Ungenauigkeiten oder Fehler enthalten können, und wir schließen ausdrücklich die Haftung für solche Ungenauigkeiten oder Fehler im größtmöglichen gesetzlich zulässigen Umfang aus.</li>
+                    
+                    <li>Die Nutzung jeglicher Informationen oder Materialien auf dieser Website erfolgt vollständig auf Ihr eigenes Risiko, wofür wir nicht haftbar gemacht werden können. Es liegt in Ihrer Verantwortung sicherzustellen, dass alle über diese Website verfügbaren Produkte, Dienstleistungen oder Informationen Ihren spezifischen Anforderungen entsprechen.</li>
+                </ol>
+                
+                <h3>2. Eigentums- und Urheberrechte</h3>
+                
+                <ol>
+                    <li>Diese Website enthält Material, das uns gehört oder von uns lizenziert ist. Dieses Material umfasst, ist aber nicht beschränkt auf, das Design, Layout, Aussehen, Erscheinungsbild und die Grafiken. Eine Reproduktion ist verboten, außer in Übereinstimmung mit dem Urheberrechtsvermerk, der Teil dieser Geschäftsbedingungen ist.</li>
+                    
+                    <li>Alle Warenzeichen, die auf dieser Website wiedergegeben werden und nicht Eigentum des Betreibers sind oder an diesen lizenziert sind, werden auf der Website anerkannt.</li>
+                    
+                    <li>Die unbefugte Nutzung dieser Website kann zu Ansprüchen auf Schadensersatz führen und/oder eine Straftat darstellen.</li>
+                </ol>
+                
+                <h3>3. Bestellungen und Vertragsabschluss</h3>
+                
+                <ol>
+                    <li>Durch Absenden einer Bestellung über unsere Website geben Sie ein Angebot zum Kauf der von Ihnen ausgewählten Produkte ab. Wir behalten uns das Recht vor, Bestellungen ohne Angabe von Gründen abzulehnen.</li>
+                    
+                    <li>Der Vertrag kommt erst durch unsere Annahme Ihrer Bestellung zustande, die in Form einer Auftragsbestätigung per E-Mail erfolgt.</li>
+                    
+                    <li>Alle Preise verstehen sich in Euro und beinhalten die gesetzlich vorgeschriebene Mehrwertsteuer.</li>
+                </ol>
+                
+                <h3>4. Lieferung und Versand</h3>
+                
+                <ol>
+                    <li>Wir bemühen uns, alle Bestellungen innerhalb von 1-3 Werktagen nach Bestelleingang zu versenden. Die angegebenen Lieferzeiten sind jedoch unverbindlich und können variieren.</li>
+                    
+                    <li>Die Versandkosten werden während des Bestellvorgangs angezeigt und sind vom Kunden zu tragen, sofern nicht ausdrücklich anders angegeben.</li>
+                    
+                    <li>Die Lieferung erfolgt an die von Ihnen angegebene Lieferadresse. Das Risiko des Verlusts oder der Beschädigung der Ware geht mit der Übergabe der Ware an Sie oder einen von Ihnen benannten Dritten, der nicht der Beförderer ist, auf Sie über.</li>
+                </ol>
+                
+                <h3>5. Produktbeschreibungen und -qualität</h3>
+                
+                <ol>
+                    <li>Wir bemühen uns, alle Produkte auf unserer Website korrekt zu beschreiben. Dennoch können geringfügige Abweichungen in Bezug auf Farbe, Textur oder andere ästhetische Aspekte auftreten.</li>
+                    
+                    <li>Aufgrund der Natur von Parfümprodukten und persönlichen Präferenzen garantieren wir nicht, dass ein bestimmter Duft Ihren individuellen Geschmacksvorstellungen entspricht.</li>
+                    
+                    <li>Alle unsere Produkte werden unter strengen Qualitätskontrollen hergestellt und entsprechen den europäischen Sicherheitsstandards für Kosmetikprodukte.</li>
+                </ol>
+                
+                <h3>6. Widerrufsrecht</h3>
+                
+                <p>Informationen zu Ihrem gesetzlichen Widerrufsrecht finden Sie in unserer separaten <a href="widerrufsrecht.html">Widerrufsbelehrung</a>.</p>
+                
+                <div class="important-notice">
+                    <p><strong>Wichtiger Hinweis:</strong> Bitte beachten Sie, dass das Widerrufsrecht für versiegelte Waren, die aus Gründen des Gesundheitsschutzes oder der Hygiene nicht zur Rückgabe geeignet sind, erlischt, wenn ihre Versiegelung nach der Lieferung entfernt wurde. Dies betrifft insbesondere unsere Parfümprodukte.</p>
+                </div>
+                
+                <h3>7. Gewährleistung und Haftung</h3>
+                
+                <ol>
+                    <li>Es gelten die gesetzlichen Gewährleistungsbestimmungen.</li>
+                    
+                    <li>Unsere Haftung für leicht fahrlässige Pflichtverletzungen ist ausgeschlossen, sofern diese keine vertragswesentlichen Pflichten, Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit oder Garantien betreffen oder Ansprüche nach dem Produkthaftungsgesetz berührt sind.</li>
+                    
+                    <li>Wir übernehmen keine Haftung für allergische Reaktionen oder Unverträglichkeiten im Zusammenhang mit der Verwendung unserer Produkte. Bei Unsicherheiten bezüglich möglicher Allergien empfehlen wir, vor der Verwendung einen Hauttest durchzuführen oder einen Dermatologen zu konsultieren.</li>
+                </ol>
+                
+                <h3>8. Datenschutz</h3>
+                
+                <p>Der Schutz Ihrer Daten ist uns wichtig. Informationen zur Erhebung, Verarbeitung und Nutzung Ihrer personenbezogenen Daten finden Sie in unserer separaten <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+                
+                <h3>9. Anwendbares Recht und Gerichtsstand</h3>
+                
+                <ol>
+                    <li>Es gilt ausschließlich österreichisches Recht unter Ausschluss des UN-Kaufrechts.</li>
+                    
+                    <li>Für Verbraucher im Sinne des Konsumentenschutzgesetzes gelten die gesetzlichen Gerichtsstände.</li>
+                    
+                    <li>Für alle Streitigkeiten aus dem Vertragsverhältnis zwischen dem Kunden und uns ist, wenn der Kunde Kaufmann, eine juristische Person des öffentlichen Rechts oder ein öffentlich-rechtliches Sondervermögen ist, Wien als Gerichtsstand vereinbart.</li>
+                </ol>
+                
+                <h3>10. Änderungen der AGB</h3>
+                
+                <p>Wir behalten uns das Recht vor, diese Allgemeinen Geschäftsbedingungen jederzeit zu ändern. Die jeweils aktuelle Version ist auf unserer Website einsehbar. Bei wesentlichen Änderungen werden wir Sie durch einen deutlichen Hinweis auf unserer Website informieren.</p>
+                
+                <h3>11. Salvatorische Klausel</h3>
+                
+                <p>Sollten einzelne Bestimmungen dieser AGB unwirksam sein oder werden, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt. An die Stelle der unwirksamen Bestimmung tritt eine wirksame Bestimmung, die dem wirtschaftlich Gewollten am nächsten kommt.</p>
+                
+                <!-- Contact Box -->
+                <div class="contact-box">
+                    <h3>Haben Sie Fragen zu unseren AGB?</h3>
+                    <p>Bei Fragen zu unseren Allgemeinen Geschäftsbedingungen kontaktieren Sie uns bitte unter <a href="mailto:info@elementalessence.at">info@elementalessence.at</a>.</p>
+                </div>
+                
+                <p style="text-align: right; margin-top: 40px; font-size: 14px; color: var(--medium-text);">Stand: April 2025</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        ELEMENTAL <span>ESSENCE</span>
+                    </div>
+                    <p class="footer-desc">Eine exklusive Kollektion von Luxusparfums, inspiriert von den Elementen, die unser Universum formen.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#about">Über uns</a></li>
+                        <li><a href="index.html#elements">Kollektionen</a></li>
+                        <li><a href="index.html#product">Shop</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Rechtliches</h4>
+                    <ul class="footer-links">
+                        <li><a href="agb.html">AGB</a></li>
+                        <li><a href="datenschutz.html">Datenschutz</a></li>
+                        <li><a href="#">Impressum</a></li>
+                        <li><a href="widerrufsrecht.html">Widerrufsrecht</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Kontakt</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:info@elementalessence.at">info@elementalessence.at</a></li>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2025 Elemental Essence. Alle Rechte vorbehalten.
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript files -->
+    <script src="js/theme.js"></script>
+    <script src="js/header.js"></script>
+</body>
+</html>
